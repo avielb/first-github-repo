@@ -3,9 +3,9 @@ node {
         git 'https://github.com/avielb/first-github-repo.git'
     }
     stage("install requirements"){
-        sh "pip3 install -r requirements.txt"
+        sh "pip install -r requirements.txt"
     }
     stage("run script"){
-        sh "python3 1.py"
+        sh "python 1.py"
     }
 }
